@@ -1,0 +1,9 @@
+fn main() {
+    let result = 20;
+    let intrest = 2.5;
+    let cost = 20000;
+    println!("result value is{}",result);
+    println!("intrest value is{}",intrest);
+    println!("cost value is {}",cost);
+}
+
