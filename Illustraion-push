@@ -1,0 +1,9 @@
+struct Data<T>{
+    value:T,
+}
+fn main(){
+    let t = Data{value:350};
+    println!("value is:{}",t.value);
+    let t2:Data<String> = Data{value:"Tom".to_string()};
+    println!("value is:{}",t2.value);
+}
