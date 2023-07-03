@@ -1,0 +1,16 @@
+use std::collections::HashMap;
+fn main(){
+    let mut statecodes = HashMap::new();
+    statecode.insert("KL","Kerala");
+    statecode.insert("MH","Maharashtra");
+    println!("size of map is {}",statecodes.len());
+    println!("{:?",statecode);
+    match statecodes.get(&"KL"){
+        Some(value)=>{
+            println!("value for key KL is {}",value);
+        }
+        none=>{
+            println!("nothing found");
+        }
+    }
+}
