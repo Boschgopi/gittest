@@ -1,0 +1,18 @@
+fn main(){
+    let b1 = Book {
+        id:1001,
+        name:"Rust in Action"
+    };b1.print();
+}
+struct Book {
+    name:&'static str,
+    id:u32
+}
+trait Printable {
+    fn print(&self);
+}
+impl Printable for Book {
+    fn print(&self){
+        println!("printing book with id:{} and name{}",self.id,self.name)
+    }
+}
